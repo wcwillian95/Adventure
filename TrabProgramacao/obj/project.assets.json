@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\2019100575\\OneDrive - Complexo de Ensino Superior do Brasil LTDA\\2º Semestre 2019\\PROGRAMAÇÃO\\TrabalhoProgramação01\\TrabProgramacao\\TrabProgramacao\\TrabProgramacao.csproj",
+      "projectUniqueName": "C:\\Users\\2019100575\\Adventure\\TrabProgramacao\\TrabProgramacao.csproj",
       "projectName": "TrabProgramacao",
-      "projectPath": "C:\\Users\\2019100575\\OneDrive - Complexo de Ensino Superior do Brasil LTDA\\2º Semestre 2019\\PROGRAMAÇÃO\\TrabalhoProgramação01\\TrabProgramacao\\TrabProgramacao\\TrabProgramacao.csproj",
+      "projectPath": "C:\\Users\\2019100575\\Adventure\\TrabProgramacao\\TrabProgramacao.csproj",
       "packagesPath": "C:\\Users\\2019100575\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\2019100575\\OneDrive - Complexo de Ensino Superior do Brasil LTDA\\2º Semestre 2019\\PROGRAMAÇÃO\\TrabalhoProgramação01\\TrabProgramacao\\TrabProgramacao\\obj\\",
+      "outputPath": "C:\\Users\\2019100575\\Adventure\\TrabProgramacao\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\2019100575\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,32 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace TrabProgramacao
+namespace ConsoleApp2
 {
-    class SingnUser
+    class Pessoa
     {
-        private string _nome;
-        private string _sexo;
-        private int _idade;
-        public string Nome
-        {
-            get { return _nome; }
-            set { this._nome = value; }
-        }
-     
-        public string Sexo
-        {
-            get {return _sexo; }
-            set {this._sexo = value; }
-        }
-        public int Idade
-        {
-            get {return _idade; }
-            set {this._idade = value;}
-            
-        }
-
-
     }
 }

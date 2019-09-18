@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace TrabProgramacao
+namespace ConsoleApp2
 {
     class Program
     {
         static void Main(string[] args)
-        {            
+        {
             Boolean Continua = true;
             List<SingnUser> listaPessoas = new List<SingnUser>();
 
@@ -26,9 +29,9 @@ namespace TrabProgramacao
                 switch (opc)
                 {
                     case "1":
-                                Console.WriteLine("\nInserir\n");
-                                listaPessoas.Add(IncluirPessoa());
-                                Console.WriteLine("----------------------------------------------------------------------------------------------------------\n");
+                        Console.WriteLine("\nInserir\n");
+                        listaPessoas.Add(IncluirPessoa());
+                        Console.WriteLine("----------------------------------------------------------------------------------------------------------\n");
 
                         break;
                     case "2":
@@ -36,7 +39,7 @@ namespace TrabProgramacao
 
                         Console.WriteLine("Digite o Nome do usuário à ser alterado");
                         string usuario = (Console.ReadLine());
-                        usuario = usuario.ToUpper();                            
+                        usuario = usuario.ToUpper();
                         SingnUser Config = listaPessoas.Find(x => x.Nome == usuario);
                         //----------------------------------------------------
                         Console.Write("Nome:");
@@ -80,10 +83,10 @@ namespace TrabProgramacao
                                     idadeConfig = true;
                                 }
                             }
-                            else if(Config.Idade >= 120)
+                            else if (Config.Idade >= 120)
                             {
                                 Console.WriteLine("***Tá de brincadeira né!? Digite uma idade válida!***");
-                                    idadeConfig = true;
+                                idadeConfig = true;
                             }
                             else
                             {
@@ -97,7 +100,7 @@ namespace TrabProgramacao
                         Console.WriteLine("Digite o ID do Usuário à ser excuido");
                         int userDel = Int32.Parse(Console.ReadLine());
 
-                        if(userDel <= listaPessoas.Count )
+                        if (userDel <= listaPessoas.Count)
                         {
                             listaPessoas.RemoveAt(userDel);
                         }
@@ -111,10 +114,10 @@ namespace TrabProgramacao
                     case "4":
                         Console.WriteLine("\n Listar");
                         Console.WriteLine(" Nome     Sexo     Idade");
-                            foreach (SingnUser pessoa in listaPessoas)
-                            {                           
-                                Console.WriteLine($"{pessoa.Nome}   -   {pessoa.Sexo}   -   {pessoa.Idade}");
-                            }
+                        foreach (SingnUser pessoa in listaPessoas)
+                        {
+                            Console.WriteLine($"{pessoa.Nome}   -   {pessoa.Sexo}   -   {pessoa.Idade}");
+                        }
                         Console.WriteLine("------------------------------------------------------------------------------------------------------------\n");
                         break;
                     case "5":
@@ -123,8 +126,8 @@ namespace TrabProgramacao
                         string receber = Console.ReadLine();
                         receber = receber.ToUpper();
                         SingnUser Pesquisar = listaPessoas.Find(x => x.Nome == receber);
-                                               
-                        Console.WriteLine($"\n Nome: {Pesquisar.Nome}");
+
+                        Console.WriteLine($"\nNome: {Pesquisar.Nome}");
                         Console.WriteLine($"Sexo: {Pesquisar.Sexo}");
                         Console.WriteLine($"Idade: {Pesquisar.Idade}");
                         Console.WriteLine("------------------------------------------------------------------------------------------------------------\n");
@@ -150,7 +153,7 @@ namespace TrabProgramacao
 
             Console.WriteLine("Cadastro de usuario \n Digite os dados a seguir:");
             Console.Write("Nome:");
-                pessoa.Nome = Console.ReadLine();
+            pessoa.Nome = Console.ReadLine();
             pessoa.Nome = pessoa.Nome.ToUpper();
             //----------------------------------------------------
             bool sexoConfig = true;
@@ -159,7 +162,7 @@ namespace TrabProgramacao
                 Console.Write("Sexo: (M) - (F)");
                 pessoa.Sexo = Console.ReadLine();
                 pessoa.Sexo = pessoa.Sexo.ToUpper();
-                if(pessoa.Sexo == "M" || pessoa.Sexo == "F")
+                if (pessoa.Sexo == "M" || pessoa.Sexo == "F")
                 {
                     sexoConfig = false;
                 }
@@ -181,11 +184,11 @@ namespace TrabProgramacao
                     Console.WriteLine("***Tem certeza que está é a sua idade?*** \n   (S) - (N)");
                     string conf = Console.ReadLine();
                     conf = conf.ToUpper();
-                    if(conf == "S")
+                    if (conf == "S")
                     {
                         idadeConfig = false;
                     }
-                    else if(conf == "N")
+                    else if (conf == "N")
                     {
                         idadeConfig = true;
                     }
