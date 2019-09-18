@@ -6,9 +6,26 @@ namespace TrabProgramacao
 {
     class SingnUser
     {
-        public string Nome { get; set; }
-        public string Sexo { get; set; }
-        public int Idade { get; set; }
+        private string _nome;
+        private string _sexo;
+        private int _idade;
+        public string Nome
+        {
+            get { return _nome; }
+            set { this._nome = value; }
+        }
+     
+        public string Sexo
+        {
+            get {return _sexo; }
+            set {this._sexo = value; }
+        }
+        public int Idade
+        {
+            get {return _idade; }
+            set {this._idade = value;}
+            
+        }
 
 
     }
